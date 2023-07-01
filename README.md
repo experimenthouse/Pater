@@ -17,16 +17,16 @@
 
 ### Schema — "names" table
 
-| Column         | Value                |
-|----------------|----------------------|
-| `id`           | `PK INT`: names.id   |
-| `person`       | `FK INT`: persons.id |
-| `type`         | `STRING`             |
-| `title`        | `STRING`             |
-| `forenames`    | `STRING`             |
-| `surname`      | `STRING`             |
-| `suffix`       | `STRING`             |
-| `postnominals` | `STRING`             |
+| Column         | Value                   |
+|----------------|-------------------------|
+| `id`           | `INTEGER PK names.id`   |
+| `person`       | `INTEGER FK persons.id` |
+| `type`         | `STRING`                |
+| `title`        | `STRING`                |
+| `forenames`    | `STRING`                |
+| `surname`      | `STRING`                |
+| `suffix`       | `STRING`                |
+| `postnominals` | `STRING`                |
 
 ## Facts
 
@@ -40,11 +40,11 @@
 
 | Column               | Value                  |
 |----------------------|------------------------|
-| `id                  | `INTEGER PK facts.id`  | 
-| `category            | `STRING`               |
-| `type                | `STRING`               |
-| `dateRange           | `STRING`               |
-| `startDate           | `STRING`               |
+| `id`                 | `INTEGER PK facts.id`  | 
+| `category`           | `STRING`               |
+| `type`               | `STRING`               |
+| `dateRange`          | `STRING`               |
+| `startDate`          | `STRING`               |
 | `startDatePrecision` | `STRING`               |
 | `endDate`            | `STRING`               |
 | `endDatePrecision`   | `STRING`               |
