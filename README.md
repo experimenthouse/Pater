@@ -4,6 +4,15 @@
 
 ## Persons
 
+The **person** is the fundamental unit in Pater. Names, facts and relationships pertain to persons.
+
+### Person record
+
+| id | name | birth | death |
+|----|------|-------|-------|
+
+A person record consists of a unique and persistent ID that allows the record to be referenced in other records. It also includes unique references to the preferred name, birth and death records associated with an individual. Additional name and fact records may be associated with an individual but are not included in the person record.
+
 ### Schema — "persons" table
 
 | Column    | Value               |
@@ -19,6 +28,15 @@
 - `death`: unique integer referencing the person's preferred date and place of death in the `facts` table.
 
 ## Names
+
+A **name** is a word or set of words by which a person is known. Most people are given a name at or shortly after birth, but names can change through events such as adoption or marriage, and multiple . Pater allows a person to have multiple names, with a preferred name set in the person record (see above).
+
+### Name record
+
+| id | person | type  | prefix | forenames | surname | suffix | postnominals |
+|----|--------|-------|--------|-----------|---------|--------|--------------|
+
+A name record consists of a unique and persistent ID that allows the record to be referenced in other records. It also includes a unique reference to the person associated with the name.
 
 ### Schema — "names" table
 
