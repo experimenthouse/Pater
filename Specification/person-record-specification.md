@@ -1,6 +1,6 @@
 # Person Record Specification
 
-The person is the fundamental unit in Pater.
+The person is the fundamental unit in Pater. A `person record` identifies a unique individual.
 
 ## Person Record Content
 
