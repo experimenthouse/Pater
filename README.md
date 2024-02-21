@@ -27,13 +27,13 @@ Pater will be written in Swift and SwiftUI with a SQLite database for storing ge
 
 The `Person` data type consists of five fields:
 
+| Field       | Description                            |
 |-------------|----------------------------------------|
 | `person_id` | Unique identifier                      |
 | `name_id`   | Unique identifier of `Name` data type  |
 | `birth_id`  | Unique identifier of `Event` data type |
 | `death_id`  | Unique identifier of `Event` data type |
 | `sex`       | Defaults to "U"                        |
-|-------------|----------------------------------------|
 
 #### Name, Birth, Death
 
@@ -49,6 +49,8 @@ Sex is the biological sex (or assigned sex) of the individual. This could be "F"
 
 The `Name` data type consists of nine fields:
 
+| Field          | Description                             |
+|----------------|-----------------------------------------|
 | `name_id`      | Unique identifier                       |
 | `person_id`    | Unique identifier of `Person` data type |
 | `name_type`    | "birth name", "married name", etc       |
